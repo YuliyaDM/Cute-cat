@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-4</title>
+    <link rel="stylesheet" href="style-4.css">
+</head>
+<body>
+        <div class="menu" id="menu">
+            <div class="avatar">
+                <img src="kotik.jpg" alt="chmonya" height="45px" width="45px" style="display: block; object-fit: cover; border-radius: 50%">
+            </div>
+            <div class="button" id="button" onclick="clickfun()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul id="ul">
+            <li id="li">
+                <img src="account.png" alt="account-mark" width="24px" height="24px">
+                <p>Хто я?</p>
+            </li>
+            <li id="li2">
+                <img src="question.png" alt="question-mark" width="24px" height="24px">
+                <p>Як я став таким?</p>
+            </li>
+            <li id="li3">
+                <img src="exclamation-mark.png" width="24px" height="24px">
+                <p>Що я символізую?</p>
+            </li>
+            <li id="li4">
+                <img src="paper.png" width="24px" height="24px">
+                <p>Як мене звати?</p> 
+            </li>
+        </ul>
+    <script>
+        function clickfun(){
+            document.getElementById('menu').style.width = '260px';
+            setTimeout(()=>{ 
+                document.getElementById('ul').style.height = '150px';
+                setTimeout(() => {
+                    document.getElementById('li').style.visibility = 'visible';
+                    document.getElementById('li2').style.visibility = 'visible';
+                    document.getElementById('li3').style.visibility = 'visible';
+                    document.getElementById('li4').style.visibility = 'visible';
+                }, 2000);
+            }, 2000)
+        }
+    </script>
+</body>
+</html>
